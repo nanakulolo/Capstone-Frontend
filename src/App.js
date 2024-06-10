@@ -18,7 +18,6 @@ import Book from './components/Book'
 
 
 import ContactUs from './components/ContactUs' 
-import AnimatedText from './components/GroupLogo'
 
 
 // import ContactInfo from './components/ContactInfo'
