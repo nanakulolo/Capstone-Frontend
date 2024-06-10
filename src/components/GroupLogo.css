@@ -1,0 +1,38 @@
+.GroupName {
+  font-size: 34px;
+  color: #179e05;
+  font-family: 'Indie Flower', cursive;
+  display: flex;
+}
+
+.GroupName span {
+  animation: animate 3s linear infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes animate {
+  0% {
+    color: #ffffff;
+    text-shadow: 0 0 10px #179e05, 0 0 20px #179e05, 0 0 40px #179e05,
+      0 0 80px #179e05, 0 0 120px #179e05, 0 0 200px #179e05, 0 0 300px #179e05,
+      0 0 400px #179e05;
+    filter: hue-rotate(0deg);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    color: #ffffff;
+    text-shadow: 0 0 10px #179e05, 0 0 20px #179e05, 0 0 40px #179e05,
+      0 0 80px #179e05, 0 0 120px #179e05, 0 0 200px #179e05, 0 0 300px #179e05,
+      0 0 400px #179e05;
+    filter: hue-rotate(180deg);
+  }
+
+  100% {
+    color: transparent;
+    box-shadow: none;
+    filter: hue-rotate(0deg);
+  }
+}

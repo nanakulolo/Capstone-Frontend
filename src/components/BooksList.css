@@ -1,0 +1,104 @@
+.bookRow {
+  margin-top: 15px;
+}
+
+.card {
+  margin-top: 15px;
+}
+
+.booksListCard {
+  width: 18rem;
+  border-radius: 40px;
+  height: 640px;
+}
+
+div.poster {
+  margin: 10px;
+}
+
+.smallPoster {
+  user-select: none;
+  border-radius: 40px;
+}
+
+.testSearch {
+  background: linear-gradient(
+    90deg,
+    rgb(66, 74, 222),
+    rgb(202, 89, 195),
+    yellow,
+    rgb(81, 81, 218)
+  );
+  width: 200px;
+  height: 50px;
+  color: aliceblue;
+  border-radius: 10px;
+  background-size: 400%;
+  border: none;
+  color: aliceblue;
+  outline: none;
+  border-radius: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.testSearch::before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  right: -5px;
+  top: -5px;
+  bottom: -5px;
+  background: linear-gradient(
+    90deg,
+    rgb(83, 90, 212),
+    rgb(202, 89, 195),
+    rgb(205, 205, 93),
+    rgb(81, 81, 218)
+  );
+  background-size: 400%;
+  border-radius: 50px;
+  filter: blur(20px);
+  z-index: -1;
+}
+
+.testSearch::before {
+  animation: star 8s infinite;
+}
+
+.testSearch:hover {
+  animation: star 8s infinite;
+}
+
+@keyframes star {
+  100% {
+    background-position: -400% 0;
+  }
+}
+
+.ButtonText {
+  font-family: 'Indie Flower', cursive;
+  font-size: 30px;
+}
+
+.priceText {
+  color: #333; /* Text color */
+  font-size: 1.5rem; /* Font size */
+  margin-bottom: 10px; /* Margin below the heading */
+}
+
+.heart {
+  width:30.5em;
+  height:3em;
+  filter:drop-shadow(2px 4px 6px black);
+}
+
+.heartFill {
+  fill:red;
+  position:absolute;
+}
+
+.heartEmpty {
+  position:absolute;
+  fill:white;
+}
